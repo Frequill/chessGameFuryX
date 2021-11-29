@@ -1,76 +1,130 @@
 public class SquareCoordinates {
-    /*
-    int A8X = 650
-    int A8Y = 125
-    int B8X = 750
-    int B8Y = 125
-    int C8X = 850
-    int C8Y = 125
-    int D8X = 950
-    int D8Y = 125
-    int E8X = 1050
-    int E8Y = 125
-    int F8X = 1150
-    int F8Y = 125
-    int G8X = 1250
-    int G8Y = 125
-    int H8X = 1350
-    int H8Y = 125
-650 225
-750 225
-850 225
-950 225
-1050 225
-1150 225
-1250 225
-1350 225
-650 325
-750 325
-850 325
-950 325
-1050 325
-1150 325
-1250 325
-1350 325
-650 425
-750 425
-850 425
-950 425
-1050 425
-1150 425
-1250 425
-1350 425
-650 525
-750 525
-850 525
-950 525
-1050 525
-1150 525
-1250 525
-1350 525
-650 625
-750 625
-850 625
-950 625
-1050 625
-1150 625
-1250 625
-1350 625
-650 725
-750 725
-850 725
-950 725
-1050 725
-1150 725
-1250 725
-1350 725
-650 825
-750 825
-850 825
-950 825
-1050 825
-1150 825
-1250 825
-1350 825
-     */
+
+    final int A8X = 650;
+    final int A8Y = 125;
+    final int B8X = 750;
+    final int B8Y = 125;
+    final int C8X = 850;
+    final int C8Y = 125;
+    final int D8X = 950;
+    final int D8Y = 125;
+    final int E8X = 1050;
+    final int E8Y = 125;
+    final int F8X = 1150;
+    final int F8Y = 125;
+    final int G8X = 1250;
+    final int G8Y = 125;
+    final int H8X = 1350;
+    final int H8Y = 125;
+    final int A7Y = 225;
+    final int B7X = 750;
+    final int B7Y = 225;
+    final int C7X = 850;
+    final int C7Y = 225;
+    final int D7X = 950;
+    final int D7Y = 225;
+    final int E7X = 1050;
+    final int E7Y = 225;
+    final int F7X = 1150;
+    final int F7Y = 225;
+    final int G7X = 1250;
+    final int G7Y = 225;
+    final int H7X = 1350;
+    final int H7Y = 225;
+    final int A6X = 650;
+    final int A6Y = 325;
+    final int B6X = 750;
+    final int B6Y = 325;
+    final int C6X = 850;
+    final int C6Y = 325;
+    final int D6X = 950;
+    final int D6Y = 325;
+    final int E6X = 1050;
+    final int E6Y = 325;
+    final int F6X = 1150;
+    final int F6Y = 325;
+    final int G6X = 1250;
+    final int G6Y = 325;
+    final int H6X = 1350;
+    final int H6Y = 325;
+    final int A5X = 650 ;
+    final int A5Y = 425;
+    final int B5X = 750 ;
+    final int B5Y = 425;
+    final int C5X = 850 ;
+    final int C5Y = 425;
+    final int D5X = 950 ;
+    final int D5Y = 425;
+    final int E5X = 1050;
+    final int E5Y = 425;
+    final int F5X = 1150;
+    final int F5Y = 425;
+    final int G5X = 1250;
+    final int G5Y = 425;
+    final int H5X = 1350;
+    final int A4X = 650 ;
+    final int A4Y = 525;
+    final int B4X = 750 ;
+    final int B4Y = 525;
+    final int C4X = 850 ;
+    final int C4Y = 525;
+    final int D4X = 950 ;
+    final int D4Y = 525;
+    final int E4X = 1050;
+    final  int E4Y = 525;
+    final int F4X = 1150;
+    final int F4Y = 525;
+    final int G4X = 1250;
+    final int G4Y = 525;
+    final int H4X = 1350;
+    final int H4Y = 525;
+    final int A3X = 650 ;
+    final int A3Y = 625;
+    final int B3X = 750 ;
+    final int B3Y = 625;
+    final int C3X = 850 ;
+    final int C3Y = 625;
+    final int D3X = 950 ;
+    final int D3Y = 625;
+    final int E3X = 1050;
+    final int E3Y = 625;
+    final int F3X = 1150;
+    final int F3Y = 625;
+    final int G3X = 1250;
+    final int G3Y = 625;
+    final int H3X = 1350;
+    final int H3Y = 625;
+    final int A2X = 650 ;
+    final int A2Y = 725;
+    final int B2X = 750 ;
+    final int B2Y = 725;
+    final int C2X = 850;
+    final int C2Y = 725;
+    final int D2X = 950 ;
+    final int D2Y = 725;
+    final int E2X = 1050;
+    final int E2Y = 725;
+    final int F2X = 1150;
+    final int F2Y = 725;
+    final int G2X = 1250;
+    final int G2Y = 725;
+    final int H2X = 1350;
+    final int H2Y = 725;
+    final  int A1X = 650 ;
+    final  int A1Y = 825 ;
+    final  int B1X = 750 ;
+    final  int B1Y = 825;
+    final  int C1X = 850 ;
+    final int C1Y = 825;
+    final  int D1X = 950 ;
+    final int D1Y = 825;
+    final   int E1X = 1050;
+    final  int E1Y = 825;
+    final  int F1X = 1150;
+    final int F1Y = 825;
+    final int G1X = 1250;
+    final int G1Y = 825;
+    final int H1X = 1350;
+    final int H1Y = 825;
+
 }

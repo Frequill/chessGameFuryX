@@ -24,9 +24,22 @@ class Frame extends JFrame {
         letterLable.setText("A          B          C          D          E          F          G          H");
         letterLable.setVisible(true);
 
+
+        int y = -360;
+        for(int i = 8; i > 0; i--){
+            JLabel numberLable = new JLabel();
+            numberLable.setBounds(505,y,1000,1000);
+            numberLable.setFont(font);
+            numberLable.setText(String.valueOf(i));
+            numberLable.setVisible(true);
+            panel.add(numberLable);
+            y = y + 100;
+        }
+
         setVisible(true); //Frame
         panel.setVisible(true);  //Panel
         panel.add(letterLable);
+
       }
 
 
@@ -45,11 +58,12 @@ class Frame extends JFrame {
                       Edwin.setColor(Color.BLACK);
                       color = false;
                   } else {
-                      Edwin.setColor(Color.WHITE);
+                      Edwin.setColor(Color.white);
                       color = true;
                   }
                   Edwin.fillRect(x, y, 100, 100);
                   x = x + 100;
+                  System.out.println(x + " " + y);
               }
 
               if (color){

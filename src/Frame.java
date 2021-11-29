@@ -5,20 +5,23 @@ class Frame extends JFrame {
 
 
 
-
       Frame(){
         setTitle("Moron-chess!");
         setSize(1920, 1080);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setBackground(Color.ORANGE);
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+          panel.setLayout(null); // Den här null button fucking the layout
         add(panel);
         panel.setBackground(Color.ORANGE);
 
         //Letters to name each chess tile
         JLabel letterLable = new JLabel();
-        letterLable.setBounds(580, 420, 1000, 1000);
+          SquareCoordinates Coordinate = new SquareCoordinates();
+          TestGubbe gubbe = new TestGubbe(50,50,64,64);
+          panel.add(gubbe);
+
+          letterLable.setBounds(580, 420, 1000, 1000);
         Font font = new Font("serif", Font.ITALIC, 30);
         letterLable.setFont(font);
         letterLable.setText("A          B          C          D          E          F          G          H");
@@ -36,9 +39,13 @@ class Frame extends JFrame {
             y = y + 100;
         }
 
+
+
         setVisible(true); //Frame
         panel.setVisible(true);  //Panel
         panel.add(letterLable);
+
+
 
       }
 
